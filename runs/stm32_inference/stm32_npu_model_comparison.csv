@@ -1,0 +1,4 @@
+model,input,output,npu_latency_ms,npu_fps,video_frames,detection_frames,video_inference_ms,wall_fps,note
+YOLOv8n full-int8 .nb,416 NHWC int8,1x5x3549 int8,35.70,28.01,200,87,36.39,9.71,selected deployment model
+YOLO11n full-int8 .nb,416 NHWC int8,1x5x3549 int8,43.20,23.15,200,83,45.03,13.57,valid but slower than YOLOv8n
+YOLO26n full-int8 .nb,416 NHWC int8,1x300x6 int8,44.08,22.69,200,17,58.94,11.22,lower video detection stability

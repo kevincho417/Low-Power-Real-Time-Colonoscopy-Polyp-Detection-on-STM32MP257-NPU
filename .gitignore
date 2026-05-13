@@ -1,0 +1,75 @@
+# Python / tooling
+__pycache__/
+*.pyc
+.pytest_cache/
+.pytest_tmp/
+.ruff_cache/
+.venv/
+venv/
+
+# Local datasets and converted labels
+data/raw/
+data/processed/
+Kvasir-SEG Data/
+CVC-ClinicDB/
+CVC-ColonDB/
+ETIS/
+Hyper-Kvasir/
+PolypGen/
+labeled-images/
+labeled-videos/
+segmented-images/
+unlabeled-images/
+
+# Training outputs and large experiment artifacts
+runs/detect/
+runs/train/
+runs/val/
+*.pt
+*.onnx
+*.engine
+*.cache
+*.npy
+
+# Videos
+*.avi
+*.mp4
+*.mov
+
+# Do not publish local device credentials
+deployment/*id_ed25519*
+deployment/*.pem
+deployment/*.key
+
+# Model artifacts: ignore by default, then allow final INT8 deployment files
+models/**
+*.tflite
+*.nb
+*.nbg
+!models/
+!models/int8/
+!models/int8/yolov8n_polyp_416_full_integer_int8.tflite
+!models/int8/yolov8n_polyp_416_full_integer_int8_1.nb
+!models/int8/yolo11n_polyp_416_full_integer_int8.tflite
+!models/int8/yolo11n_polyp_416_full_integer_int8_1.nb
+!models/int8/yolo26n_polyp_416_full_integer_int8.tflite
+!models/int8/yolo26n_polyp_416_full_integer_int8_1.nb
+
+# Keep compact result summaries, but not generated demo videos or raw validation dumps
+runs/**
+!runs/
+!runs/.gitkeep
+!runs/multidata_compare_eval_4models/
+!runs/multidata_compare_eval_4models/*.csv
+!runs/multidata_compare_eval_4models/*.json
+!runs/multidata_compare_eval_4models/report_figures/
+!runs/multidata_compare_eval_4models/report_figures/*.png
+!runs/multidata_compare_eval_4models/full_paper_figures/
+!runs/multidata_compare_eval_4models/full_paper_figures/*.png
+!runs/stm32_inference/
+!runs/stm32_inference/stm32_npu_model_comparison.csv
+
+# Local backups and OS files
+*.bak.docx
+Thumbs.db
+.DS_Store

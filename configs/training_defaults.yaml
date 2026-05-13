@@ -1,0 +1,13 @@
+model: yolo11n.pt
+imgsz: 416
+epochs: 100
+batch: 16
+patience: 20
+workers: 4
+optimizer: auto
+seed: 42
+single_cls: false
+cos_lr: true
+close_mosaic: 10
+project: runs/train
+name: yolo11n_polyp_416
