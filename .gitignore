@@ -70,6 +70,7 @@ runs/**
 !runs/stm32_inference/stm32_npu_model_comparison.csv
 
 # Local backups and OS files
+*.docx
 *.bak.docx
 Thumbs.db
 .DS_Store

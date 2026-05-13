@@ -131,18 +131,12 @@ python deployment\bench_stai_model.py --help
 python deployment\stai_yolo_video.py --help
 ```
 
-## Reports
+## Report
 
-The complete paper-style report is:
-
-```text
-Polyp Detection STM32MP257 Full Paper Report.docx
-```
-
-The model-comparison report is:
+The complete paper-style report is available as Markdown for GitHub preview:
 
 ```text
-Digital AI Proposed Project - YOLO Comparison.docx
+REPORT.md
 ```
 
 ## Notes
